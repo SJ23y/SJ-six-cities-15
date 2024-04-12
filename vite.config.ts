@@ -6,6 +6,7 @@ import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/SJ-six-cities-15',
   plugins: [react()],
   test: {
     globals: true,
