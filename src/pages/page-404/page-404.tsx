@@ -1,10 +1,16 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AppRoute } from '../../consts';
 import { Helmet } from 'react-helmet-async';
 import React from 'react';
 import './404.css';
 
 function Page404() {
+  const path = window.location.pathname;
+  const navigate = useNavigate();
+
+  if (path === '/SJ-six-cities-15/' || path === '/SJ-six-cities-15') {
+    navigate(AppRoute.Main);
+  }
   return (
     <React.Fragment>
       <Helmet>
