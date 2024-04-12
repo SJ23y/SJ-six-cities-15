@@ -68,10 +68,10 @@ const PlaceCardImageSize = {
 } as const;
 
 enum AppRoute {
-  Main = '/',
-  Login = '/login',
-  Favorites = '/favorites',
-  Offer = '/offer/:offerId',
+  Main = '/SJ-six-cities-15/',
+  Login = '/SJ-six-cities-15/login',
+  Favorites = '/SJ-six-cities-15/favorites',
+  Offer = '/SJ-six-cities-15/offer/:offerId',
   Page404 = '/404',
 }
 
