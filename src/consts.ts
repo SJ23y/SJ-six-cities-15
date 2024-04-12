@@ -73,6 +73,7 @@ enum AppRoute {
   Favorites = '/favorites',
   Offer = '/offer/:offerId',
   Page404 = '/404',
+  GITHUB = '/SJ-six-cities-15/'
 }
 
 enum AuthorizationStatus {

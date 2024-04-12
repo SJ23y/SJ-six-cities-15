@@ -59,7 +59,7 @@ function Layout(): JSX.Element {
               >
                 <img
                   className="header__logo"
-                  src="img/logo.svg"
+                  src="/SJ-six-cities-15/img/logo.svg"
                   alt="6 cities logo"
                   width="81"
                   height="41"

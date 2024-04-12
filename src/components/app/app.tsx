@@ -40,6 +40,7 @@ function App(): JSX.Element {
         <Routes>
           <Route path={AppRoute.Main} element={<Layout />}>
             <Route index element={<Main />} />
+            <Route path={AppRoute.GITHUB} element={<Main />} />
 
             <Route path={AppRoute.Login} element={<Login />} />
 
