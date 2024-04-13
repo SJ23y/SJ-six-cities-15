@@ -12,6 +12,7 @@ import {
 } from '../../store/main-process/selectors';
 import { useFavoriteOffers } from '../../hooks/use-favorite-offers';
 import { logoutUser } from '../../store/user-process/thunk-actions';
+import { Helmet } from 'react-helmet-async';
 
 function Layout(): JSX.Element {
   const favoriteOffers = useAppSelector(getFavoriteOffers);
@@ -19,6 +20,8 @@ function Layout(): JSX.Element {
   const user = useAppSelector(getUserInfo);
   const isAuth = useAppSelector(checkAuthentication);
   const pathname = window.location.pathname as AppRoute;
+  const path = window.location.hostname;
+  console.log(path);
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
   const isNotLogin = pathname !== AppRoute.Login;
@@ -45,6 +48,9 @@ function Layout(): JSX.Element {
           pathname === AppRoute.Main && offers?.length === 0,
       })}
     >
+      <Helmet>
+        { (path === 'sj23y.github.io') ? <link rel="stylesheet" href="/SJ-six-cities-15/css/main.css" /> : null }
+      </Helmet>
       <header className="header">
         <div className="container">
           <div className="header__wrapper">
