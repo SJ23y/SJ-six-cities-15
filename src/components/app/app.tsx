@@ -36,7 +36,7 @@ function App(): JSX.Element {
 
   return (
     <HelmetProvider>
-      <HistoryRouter history={browserHistory}>
+      <HistoryRouter basename='/SJ-six-cities-15' history={browserHistory}>
         <Routes>
           <Route path={AppRoute.Main} element={<Layout />}>
             <Route index element={<Main />} />
